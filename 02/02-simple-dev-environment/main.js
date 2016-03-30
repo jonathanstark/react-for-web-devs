@@ -36,11 +36,11 @@ var App = React.createClass({
                 <Summary date={this.state.date} calories={this.state.calories} />
                 <Controls />
                 <EntryTable
-                    date={this.state.date}
-                    entries={this.state.entries}
-                    deleteEntry={this.deleteEntry} />
+                date={this.state.date}
+                entries={this.state.entries}
+                deleteEntry={this.deleteEntry} />
             </section>
-        )
+            )
     }
 });
 
@@ -52,7 +52,7 @@ var Summary = React.createClass({
                 <div className="calories">{this.props.calories}</div>
                 <div className="label">calories left</div>
             </h1>
-        )
+            )
     }
 });
 
@@ -66,7 +66,7 @@ var Controls = React.createClass({
                 <li><a className="button" href="./exercise">Exercise</a></li>
                 <li><a className="button" href="./more">More</a></li>
             </ul>
-        )
+            )
     }
 });
 
@@ -74,11 +74,11 @@ var EntryTable = React.createClass({
     renderEntryTableRow: function(key) {
         return (
             <EntryTableRow
-                key={key}
-                index={key}
-                entry={this.props.entries[key]}
-                deleteEntry={this.props.deleteEntry} />
-        )
+            key={key}
+            index={key}
+            entry={this.props.entries[key]}
+            deleteEntry={this.props.deleteEntry} />
+            )
     },
     render: function() {
         return (
@@ -99,7 +99,7 @@ var EntryTable = React.createClass({
                     </tbody>
                 </table>
             </section>
-        )
+            )
     }
 });
 
@@ -128,12 +128,12 @@ var EntryTableRow = React.createClass({
                 <td className="time datetime">{entry.time}</td>
                 <td className="controls">
                     <a
-                        className="button delete-food"
-                        href="./delete"
-                        onClick={this.handleClick}>Delete</a>
+                    className="button delete-food"
+                    href="./delete"
+                    onClick={this.handleClick}>Delete</a>
                 </td>
             </tr>
-        )
+            )
     }
 });
 
