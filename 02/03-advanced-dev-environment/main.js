@@ -74,10 +74,10 @@ var EntryTable = React.createClass({
     renderEntryTableRow: function(key) {
         return (
             <EntryTableRow
-            key={key}
-            index={key}
-            entry={this.props.entries[key]}
-            deleteEntry={this.props.deleteEntry} />
+                key={key}
+                index={key}
+                entry={this.props.entries[key]}
+                deleteEntry={this.props.deleteEntry} />
         )
     },
     render: function() {
@@ -128,9 +128,9 @@ var EntryTableRow = React.createClass({
                 <td className="time datetime">{entry.time}</td>
                 <td className="controls">
                     <a
-                    className="button delete-food"
-                    href="./delete"
-                    onClick={this.handleClick}>Delete</a>
+                        className="button delete-food"
+                        href="./delete"
+                        onClick={this.handleClick}>Delete</a>
                 </td>
             </tr>
         )
