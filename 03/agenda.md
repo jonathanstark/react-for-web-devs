@@ -6,7 +6,7 @@ In this course you’ll discover how React Native makes the creation of native a
 * Apply your knowledge of React JS to the creation of a native iOS app using React Native
 * Understand UI components, styling, touch handling, and more
 * See how React simplifies debugging and reduces errors
-* Learn about finalizing and optimizing performance for app
+* Learn about finalizing app
 * See how to submit your native iOS to the App Store
 
 ## 01 Hello World
@@ -177,17 +177,27 @@ In this course you’ll discover how React Native makes the creation of native a
 
 ## 09 Add New Entry Form
 
-* Dupe Summary.js to create FoodForm.js
-* Rename class and export
-* Paste in `handleSubmit` function
-* Paste in `render` function
-* Import FoodForm into App.js
-* Add FoodForm tag to `render` function in App.js
-* Add currDate/Time vars to `render` function in App.js
-* Add `addEntry` function in App.js
-* Go back to FoodForm.js
-* Gut pretty much everything but imports
-* Change `Summary` to `FoodForm` in class def and export
+1. Dupe Summary.js to create FoodForm.js
+2. Rename class and export
+3. Paste in `handleSubmit` function
+4. Paste in `render` function
+5. Import FoodForm into App.js
+6. Add FoodForm tag to `render` function in App.js
+7. Add currDate/Time vars to `render` function in App.js
+8. Add `addEntry` function in App.js
+9. Go back to FoodForm.js
+10. Gut pretty much everything but imports
+11. Change `Summary` to `FoodForm` in class def and export
+
+## 10 Submit To App Store
+
+* Add App Icons
+* Update Launch view
+* [Exporting Your App for Testing](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html#//apple_ref/doc/uid/TP40012582-CH8-SW1)
+* [Distributing Your App Using TestFlight](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingYourAppUsingTestFlight/DistributingYourAppUsingTestFlight.html#//apple_ref/doc/uid/TP40012582-CH37-SW1)
+* [Package for Distribution](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/ConfiguringYourApp/ConfiguringYourApp.html#//apple_ref/doc/uid/TP40012582-CH28-SW1)
+* [Submit to iTunes Connect](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SubmittingYourApp/SubmittingYourApp.html)
+
 
 
 
