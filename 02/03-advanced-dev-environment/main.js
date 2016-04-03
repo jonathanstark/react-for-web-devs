@@ -40,7 +40,7 @@ var App = React.createClass({
                     entries={this.state.entries}
                     deleteEntry={this.deleteEntry} />
             </section>
-        )
+            )
     }
 });
 
