@@ -17,13 +17,12 @@ In this course you’ll discover how React Native makes the creation of native a
 4. Switch to Terminal application
 4. Run `npm install -g react-native-cli` (you can do this from any directory)
 5. Run `cd ~/Desktop` (or wherever you want your project to live)
-6. Run `npm install -g react-native-cli` to install React Native
-7. Run `react-native init App` to create a React starter project (this can take a couple minutes)
-8. Run `cd App` to navigate into the project directory
-9. Run `open .` to open the project directory in the Finder
-10. Double click the `App.xcodeproj` file in the `ios` directory to open it in Xcode
-11. In Xcode, click the run button to launch the project in the iOS simulator
-12. Adjust the simulator so that it is easy to view on your machine
+6. Run `react-native init App` to create a React starter project (this can take a couple minutes)
+7. Run `cd App` to navigate into the project directory
+8. Run `open .` to open the project directory in the Finder
+9. Double click the `App.xcodeproj` file in the `ios` directory to open it in Xcode
+10. In Xcode, click the run button to launch the project in the iOS simulator
+11. Adjust the simulator so that it is easy to view on your machine
 
 ## 02 Initial Clean Up
 
