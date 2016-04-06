@@ -9,3 +9,6 @@ In this session, Jonathan will extend the core features of a React app using ext
 * Navigation
 * Animation
 * Testing
+	* StackTrace?
+	* UnitTesting?
+
