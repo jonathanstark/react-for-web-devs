@@ -26,11 +26,11 @@ var historyApiFallback = require('connect-history-api-fallback')
 gulp.task('styles',function() {
   // move over fonts
 
-  gulp.src('css/fonts/**.*')
+  gulp.src('inc/fonts/**.*')
     .pipe(gulp.dest('build/css/fonts'))
 
   // Compiles CSS
-  gulp.src('css/style.styl')
+  gulp.src('inc/styles.css')
     .pipe(stylus())
     .pipe(autoprefixer())
     .pipe(gulp.dest('./build/css/'))
@@ -41,7 +41,7 @@ gulp.task('styles',function() {
   Images
 */
 gulp.task('images',function(){
-  gulp.src('css/images/**')
+  gulp.src('inc/images/**')
     .pipe(gulp.dest('./build/css/images'))
 });
 
@@ -108,6 +108,6 @@ gulp.task('scripts', function() {
 
 // run 'scripts' task first, then watch for future changes
 gulp.task('default', ['images','styles','scripts','browser-sync'], function() {
-  gulp.watch('css/**/*', ['styles']); // gulp watch for stylus changes
+  gulp.watch('inc/*', ['styles']); // gulp watch for stylus changes
   return buildScript('main.js', true); // browserify watch for JS changes
 });
