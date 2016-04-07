@@ -12,49 +12,24 @@ var App = React.createClass({
         return {
             date: u.currentDate(),
             email: '',
-            uid: '',
             entries: {}
         }
     },
     authenticateUser: function(credentials) {
-        var _this = this;
-        var ref = u.getDbRef();
-        ref.authWithPassword({
-            email    : credentials.email,
-            password : credentials.password
-        }, function(error, authData) {
-            if (error) {
-                alert(error);
-            } else {
-                _this.setState({
-                    email: authData.password.email,
-                    uid: authData.uid
-                }, function() {
-                    this.getEntries();
-                });
-            }
-        });
-    },
-    logout: function() {
-        var ref = u.getDbRef();
-        ref.unauth();
-        this.setState({
-            email: '',
-            uid: ''
-        });
+        this.setState({email: credentials.email});
     },
     addEntry(entry) {
         var entries = u.getDbRef('entries');
-        entries.child(this.state.uid).child(this.state.date).push(entry);
+        entries.child(this.state.date).push(entry);
     },
     deleteEntry: function(key) {
         var entries = u.getDbRef('entries');
-        entries.child(this.state.uid).child(this.state.date).child(key).remove();
+        entries.child(this.state.date).child(key).remove();
     },
     getEntries: function() {
         var _this = this;
         var entries = u.getDbRef('entries');
-        var entriesForDate = entries.child(this.state.uid).child(this.state.date);
+        var entriesForDate = entries.child(this.state.date);
         entriesForDate.on('value', function(data){
             var entriesForDate = data.val() || {};
             _this.setState({'entries': entriesForDate});
@@ -70,21 +45,10 @@ var App = React.createClass({
         this.getEntries();
     },
     componentDidMount: function() {
-        var ref = u.getDbRef();
-        var authData = ref.getAuth();
-        if (authData) {
-            this.setState({
-                email: authData.password.email,
-                uid: authData.uid
-            }, function() {
-                this.getEntries();
-            });
-        }
+        this.getEntries();
     },
     render: function() {
-        var ref = u.getDbRef();
-        var authData = ref.getAuth();
-        if (!authData) {
+        if (this.state.email == '') {
             return (
                 <section className="login">
                     <LoginForm authenticateUser={this.authenticateUser} />
@@ -96,7 +60,7 @@ var App = React.createClass({
             return (
                 <section className="home">
                     <Summary date={this.state.date} entries={this.state.entries} />
-                    <Controls setDate={this.setDate} logout={this.logout} />
+                    <Controls setDate={this.setDate} />
                     <EntryTable date={this.state.date} entries={this.state.entries} deleteEntry={this.deleteEntry} />
                     <FoodForm date={currentDate} time={currentTime} addEntry={this.addEntry} />
                 </section>

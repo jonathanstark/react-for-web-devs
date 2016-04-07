@@ -89,6 +89,44 @@ At this point, we are only writing to the db when records are added or removed, 
 10. Edit record in firebase
 11. Delete record in iOS
 
+## 11 Add login form
+
+1. Dupe FoodForm
+2. Rename as LoginForm
+3. Edit form appropriately for email/password
+4. Point submit handler at `this.props.authenticateUser()`
+5. Remove reset form line
+6. Switch to App.js
+7. Add email to intitial state
+8. Branch in render on empty email
+9. Create `authenticateUser()` function
+10. Pass `authenticateUser()` as prop to LoginForm
+11. Import LoginForm
+
+## 12 Store entries under user in Firebase
+
+1. Add a child selector for email to `addEntry()`
+2. Add a child selector for email to `deleteEntry()`
+3. Add a child selector for email to `getEntries()`
+4. Create `safeEmail()` in helpers.js
+    * `return email.replace(/[\.#$\[\]@]/g,'_');`
+5. Add `safeEmail()` wrapper to email child selectors in App.js
+
+## 13 Add Firebase authentication
+
+1. Create a user in Firebase dashboard
+1. Open App.js
+1. Add uid to `getInitialState()`
+1. Replace branching logic in `render()` with `ref.getAuth()` stuff
+1. Update `authenticateUser()` with `authWithPassword()` stuff
+1. Add a `logout()` function
+1. Pass `logout` function to Controls
+1. Open Controls.js
+1. Add a logout button and handler
+1. Move `this.getEntries()` to `setState()` callbacks
+
+
+
 
 
 

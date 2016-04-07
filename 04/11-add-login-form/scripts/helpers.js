@@ -42,9 +42,6 @@ let helpers = {
         var mm = ('0' + today.getMinutes()).slice(-2);
         var timeString = hh + ':'+ mm;
         return timeString;
-    },
-    safeEmail: function(email) {
-        return email.replace(/[\.#$\[\]@]/g,'_');
     }
 }
 

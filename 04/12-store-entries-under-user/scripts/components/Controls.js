@@ -9,10 +9,6 @@ var Controls = React.createClass({
         event.preventDefault();
         this.props.setDate(-1);
     },
-    handleClickLogout: function(event) {
-        event.preventDefault();
-        this.props.logout();
-    },
     render: function() {
         return (
             <ul>
@@ -21,7 +17,6 @@ var Controls = React.createClass({
                 <li><a className="button" href="./food">Food</a></li>
                 <li><a className="button" href="./exercise">Exercise</a></li>
                 <li><a className="button" href="./more">More</a></li>
-                <li><a onClick={this.handleClickLogout} className="button" href="./logout">Logout</a></li>
             </ul>
         )
     }
