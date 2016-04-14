@@ -7,7 +7,6 @@ In this session, Jonathan will extend the core features of a React app using ext
 * Animation
 * ListView
 * Routing
-* DatePicker
 * Testing
 	* `console.log`
   * React Dev Tools
