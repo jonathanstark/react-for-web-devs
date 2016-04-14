@@ -1,0 +1,32 @@
+get Data from transfermarkt.com
+
+var results = [];
+$('.box:nth-child(3) tbody tr').each(function(index, item){
+  var obj = {};
+  var playDay = $.trim($(item).find('td:nth-child(1)').text());
+  playDay = playDay.replace(' ','');
+
+  obj['day'+ playDay] = {};
+
+  obj['day'+ playDay].date = $.trim($(item).find('td:nth-child(2)').text());
+  obj['day'+ playDay].home = $(item).find('td:nth-child(4) a').text();
+  obj['day'+ playDay].away = $(item).find('td:nth-child(6) a').text();
+  obj['day'+ playDay].result = $(item).find('td:nth-child(7) a').text();
+  obj['day'+ playDay].goals = $(item).find('td:nth-child(9)').text();
+  obj['day'+ playDay].assists = $(item).find('td:nth-child(10)').text();
+  obj['day'+ playDay].ownGoal = $(item).find('td:nth-child(11)').text();
+  obj['day'+ playDay].yellowCard = $(item).find('td:nth-child(12)').text();
+  obj['day'+ playDay].doubleYellowCard = $(item).find('td:nth-child(13)').text();
+  obj['day'+ playDay].redCard = $(item).find('td:nth-child(14)').text();
+  obj['day'+ playDay].inGameOnMin = $(item).find('td:nth-child(15)').text().replace("'","");
+  obj['day'+ playDay].outGameOnMin = $(item).find('td:nth-child(16)').text().replace("'","");
+  obj['day'+ playDay].playedMinutes = $(item).find('td:nth-child(17)').text().replace("'","");
+
+
+
+  results.push(JSON.stringify(obj));
+
+});
+
+console.log(results);
+copy(results);

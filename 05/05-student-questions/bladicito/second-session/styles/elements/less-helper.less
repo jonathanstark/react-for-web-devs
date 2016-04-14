@@ -1,0 +1,48 @@
+
+
+.mobile-is-visible {
+    display:none !important;
+}
+.tablet-is-visible {
+    display:none !important;
+}
+.is-hidden {
+    display:none !important;
+}
+
+
+
+//////////////////////////////////////////////////////////
+//
+//	Mobile
+//
+//////////////////////////////////////////////////////////
+@media screen and (max-width: @breakpoint-mobile) {
+
+    .mobile-is-hidden {
+        display:none !important;
+    }
+    .mobile-is-visible {
+        display:block !important;
+    }
+
+    .mobile-btn-block {
+        display:block;
+        width:100% !important;
+        margin-bottom: 23px;
+    }
+}
+
+//////////////////////////////////////////////////////////
+//
+//	Tablet
+//
+//////////////////////////////////////////////////////////
+@media screen and (max-width: @breakpoint-tablet) {
+    .tablet-is-hidden {
+        display:none !important;
+    }
+    .tablet-is-visible {
+        display:block !important;
+    }
+}

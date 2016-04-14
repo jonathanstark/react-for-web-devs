@@ -1,0 +1,415 @@
+.main-claudio-pizarro {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #474747;
+  letter-spacing: 0.4px;
+}
+.main-claudio-pizarro table {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #474747;
+  letter-spacing: 0.4px;
+}
+.main-claudio-pizarro h1,
+.main-claudio-pizarro .h1,
+.main-claudio-pizarro h2,
+.main-claudio-pizarro .h2,
+.main-claudio-pizarro h3,
+.main-claudio-pizarro .h3,
+.main-claudio-pizarro h4,
+.main-claudio-pizarro .h4 {
+  font-family: 'HelveticaNeueW01-Thin', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  line-height: 1;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: -0.7px;
+}
+.main-claudio-pizarro h1,
+.main-claudio-pizarro .h1 {
+  font-size: 60px;
+  margin-bottom: 26px;
+  letter-spacing: 0.8px;
+}
+.main-claudio-pizarro h2,
+.main-claudio-pizarro .h2 {
+  font-size: 27px;
+  letter-spacing: 0.6px;
+  margin-bottom: 45px;
+}
+.main-claudio-pizarro h3,
+.main-claudio-pizarro .h3 {
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  margin-bottom: 13px;
+  color: #474747;
+}
+.main-claudio-pizarro h4,
+.main-claudio-pizarro .h4 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 1.1px;
+  margin-bottom: 16px;
+}
+.main-claudio-pizarro h5,
+.main-claudio-pizarro .h5 {
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  word-spacing: 6px;
+}
+.main-claudio-pizarro p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #474747;
+  letter-spacing: 0.4px;
+}
+.main-claudio-pizarro .page-header h2,
+.main-claudio-pizarro .page-header .h2 {
+  font-size: 43px;
+  margin-bottom: 23px;
+  letter-spacing: 1.2px;
+}
+.main-claudio-pizarro .page-header h3,
+.main-claudio-pizarro .page-header .h3 {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  color: #474747;
+}
+.main-claudio-pizarro b,
+.main-claudio-pizarro strong,
+.main-claudio-pizarro .bold {
+  font-family: 'Aeonis LT W01 Thin Extd', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.7px;
+}
+.main-claudio-pizarro .link {
+  color: #906494;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: -0.4px;
+}
+.main-claudio-pizarro .link i {
+  margin: 0 15px;
+  position: relative;
+  top: 5px;
+}
+.main-claudio-pizarro .link:hover {
+  color: #612166;
+}
+.main-claudio-pizarro .text-price {
+  letter-spacing: 0.6px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.main-claudio-pizarro .text-muted {
+  color: #999999;
+}
+.main-claudio-pizarro .text-primary {
+  color: #FF9900;
+}
+.main-claudio-pizarro .text-warning {
+  color: #c09853;
+}
+.main-claudio-pizarro .text-danger {
+  color: #b94a48;
+}
+.main-claudio-pizarro .text-success {
+  color: #468847;
+}
+.main-claudio-pizarro .text-info {
+  color: #3a87ad;
+}
+.main-claudio-pizarro .text-left {
+  text-align: left;
+}
+.main-claudio-pizarro .text-right {
+  text-align: right;
+}
+.main-claudio-pizarro .text-center {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .main-claudio-pizarro p {
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+  .main-claudio-pizarro p b,
+  .main-claudio-pizarro p strong {
+    letter-spacing: 0.1px;
+  }
+  .main-claudio-pizarro h1 {
+    font-size: 28px;
+    margin-bottom: 14px;
+    letter-spacing: 0.6px;
+  }
+  .main-claudio-pizarro h2 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 25px;
+    letter-spacing: 0.8px;
+  }
+  .main-claudio-pizarro h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .main-claudio-pizarro h4 {
+    font-size: 19px;
+    letter-spacing: 1.4px;
+  }
+  .main-claudio-pizarro h5 {
+    font-size: 17px;
+    letter-spacing: -0.7px;
+  }
+  .main-claudio-pizarro .page-header h1 {
+    font-size: 28px;
+  }
+  .main-claudio-pizarro .page-header h2 {
+    font-size: 43px;
+    margin-bottom: 13px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  .main-claudio-pizarro .page-header h3 {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+  }
+  .main-claudio-pizarro .link {
+    letter-spacing: 0.2px;
+  }
+  .main-claudio-pizarro .link i {
+    margin: 0 12px;
+  }
+  .main-claudio-pizarro .control-label {
+    font-family: 'Aeonis LT W01 Thin Extd', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+  }
+  .main-claudio-pizarro .text-price {
+    letter-spacing: 0.6px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .main-claudio-pizarro table {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #474747;
+    letter-spacing: 0.4px;
+  }
+}
+.mobile-is-visible {
+  display: none !important;
+}
+.tablet-is-visible {
+  display: none !important;
+}
+.is-hidden {
+  display: none !important;
+}
+@media screen and (max-width: 480px) {
+  .mobile-is-hidden {
+    display: none !important;
+  }
+  .mobile-is-visible {
+    display: block !important;
+  }
+  .mobile-btn-block {
+    display: block;
+    width: 100% !important;
+    margin-bottom: 23px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .tablet-is-hidden {
+    display: none !important;
+  }
+  .tablet-is-visible {
+    display: block !important;
+  }
+}
+@color-primary-button #A7A7A7;
+.component-controls .control {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+.component-controls .control > .component-main-picture {
+  width: auto;
+}
+.component-controls .control i {
+  font-size: 50px;
+}
+.component-controls .control img {
+  width: 40px;
+  height: auto;
+  max-height: 40px;
+  position: relative;
+  top: -12px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.component-donutchart.werder-bremen {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #006737;
+}
+.component-donutchart.bayern-munich {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ff0040;
+}
+.component-entry-table .body__data {
+  font-size: 12px;
+}
+.component-entry-table .header__data {
+  font-size: 13px;
+  text-align: center;
+}
+.component-entry-table .header__data--date {
+  width: 8.33%;
+}
+.component-entry-table .header__data--local {
+  width: 8.33%;
+}
+.component-entry-table .header__data--visit {
+  width: 8.33%;
+}
+.component-entry-table .header__data--score {
+  width: 8.33%;
+}
+.component-entry-table .header__data--goals {
+  width: 8.33%;
+}
+.component-entry-table .header__data--assists {
+  width: 8.33%;
+}
+.component-entry-table .header__data--cards-y {
+  width: 8.33%;
+}
+.component-entry-table .header__data--cards-ry {
+  width: 8.33%;
+}
+.component-entry-table .header__data--cards-r {
+  width: 8.33%;
+}
+.component-entry-table .header__data--played-mins {
+  width: 8.33%;
+}
+.component-entry-table .header__data--in-min-in {
+  width: 8.33%;
+}
+.component-entry-table .header__data--in-min-out {
+  width: 8.33%;
+}
+.component-entry-table.werder-bremen {
+  background-color: #FFFFFF;
+}
+.component-entry-table.werder-bremen tbody tr:nth-child(odd) {
+  background-color: #e6fff4;
+}
+.component-entry-table.werder-bremen thead {
+  background-color: #006737;
+  color: #FFFFFF;
+}
+.component-entry-table.werder-bremen thead th {
+  border-left: 1px solid #006737;
+  border-bottom: 1px solid #006737;
+}
+.component-entry-table.werder-bremen thead th:last-child {
+  border-right: 1px solid #006737;
+}
+.component-entry-table.werder-bremen tbody tr:last-child td {
+  border-bottom: 1px solid #006737;
+}
+.component-entry-table.werder-bremen tbody td {
+  border-left: 1px solid #006737;
+}
+.component-entry-table.werder-bremen tbody td:last-child {
+  border-right: 1px solid #006737;
+}
+.component-entry-table.werder-bremen .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.component-entry-table.bayern-munich {
+  background-color: #FFFFFF;
+}
+.component-entry-table.bayern-munich tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.component-entry-table.bayern-munich thead {
+  background-color: #ff0040;
+  color: #FFFFFF;
+}
+.component-entry-table.bayern-munich thead th {
+  border-left: 1px solid #ff0040;
+  border-bottom: 1px solid #ff0040;
+}
+.component-entry-table.bayern-munich thead th:last-child {
+  border-right: 1px solid #ff0040;
+}
+.component-entry-table.bayern-munich tbody tr:last-child td {
+  border-bottom: 1px solid #ff0040;
+}
+.component-entry-table.bayern-munich tbody td {
+  border-left: 1px solid #ff0040;
+}
+.component-entry-table.bayern-munich tbody td:last-child {
+  border-right: 1px solid #ff0040;
+}
+.component-entry-table.bayern-munich .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.component-entry-table .icon {
+  width: 15px;
+  height: auto;
+  max-height: 15px;
+}
+.component-entry-table-row .shield__mini {
+  width: 15px;
+  height: auto;
+  max-height: 15px;
+}
+.component-entry-table-row.data__row td {
+  font-size: 10px;
+  text-align: center;
+}
+.component-main-picture {
+  display: inline-block;
+  width: 100%;
+}
+.component-summary.werder-bremen {
+  background-color: #009252;
+}
+.component-summary.werder-bremen .summary__title {
+  background-color: #006737;
+}
+.component-summary.bayern-munich {
+  background-color: #c03;
+}
+.component-summary.bayern-munich .summary__title {
+  background-color: #ff0040;
+}
+.component-summary .summary__image {
+  width: 100%;
+}
+.component-summary .summary-shield {
+  margin-top: 40px;
+}
+.component-summary .summary__numbers {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 30px;
+  padding-left: 30px;
+}
+.component-summary .summary__numbers .summary__numbers__item {
+  color: #FFFFFF;
+}
+.component-summary .summary__numbers .summary__numbers__item--label {
+  font-weight: 200;
+  color: #fff5cf;
+}

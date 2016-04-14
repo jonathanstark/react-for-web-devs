@@ -1,0 +1,118 @@
+.component-entry-table {
+
+
+    .tableGeneral();
+    &.werder-bremen {
+        background-color: @color-white;
+        .tableColorsForClub(@color-werder-bremen-secondary, @color-white);
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &.bayern-munich {
+        background-color: @color-white;
+        .tableColorsForClub(@color-bayern-munich-secondary, @color-white);
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .icon {
+        width: 15px;
+        height: auto;
+        max-height: 15px;
+    }
+
+
+
+}
+
+.tableColorsForClub(@mainColor, @textColor) {
+    @base: @mainColor;
+    @complement1: spin(@base, 180);
+    @complement2: darken(spin(@base, 180), 5%);
+    @lighten1: lighten(@base, 75%);
+    @lighten2: lighten(@base, 10%);
+
+    tbody tr:nth-child(odd) {
+        background-color: @lighten1;
+    }
+
+    thead {
+        background-color: @base;
+        color: @textColor;
+        th {
+            border-left: 1px solid @base;
+            border-bottom: 1px solid @mainColor;
+        }
+        th:last-child {
+            border-right: 1px solid @base;
+        }
+
+    }
+    tbody {
+        tr:last-child {
+            td {
+                border-bottom: 1px solid @mainColor;
+            }
+        }
+        td {
+            border-left: 1px solid @mainColor;
+        }
+        td:last-child {
+            border-right: 1px solid @mainColor;
+        }
+    }
+}
+
+.tableGeneral () {
+
+    .body__data {
+        font-size: 12px;
+    }
+    .header__data {
+        font-size: 13px;
+        text-align: center;
+    }
+    .header__data--date {
+        width: 8.33%;
+    }
+    .header__data--local {
+        width: 8.33%;
+    }
+    .header__data--visit {
+        width: 8.33%;
+    }
+    .header__data--score {
+        width: 8.33%;
+    }
+    .header__data--goals {
+        width: 8.33%;
+    }
+    .header__data--assists {
+        width: 8.33%;
+    }
+    .header__data--cards-y {
+        width: 8.33%;
+    }
+    .header__data--cards-ry {
+        width: 8.33%;
+    }
+    .header__data--cards-r {
+        width: 8.33%;
+    }
+    .header__data--played-mins {
+        width: 8.33%;
+    }
+    .header__data--in-min-in {
+        width: 8.33%;
+    }
+    .header__data--in-min-out {
+        width: 8.33%;
+    }
+
+
+}

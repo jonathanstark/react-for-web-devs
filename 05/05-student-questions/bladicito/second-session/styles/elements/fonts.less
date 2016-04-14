@@ -1,0 +1,324 @@
+
+//////////////////////////////////////////////////////////
+//
+//	FONT SIZES
+//
+//////////////////////////////////////////////////////////
+@font-size-p:			15px;
+@font-size-h1:       	60px;
+@font-size-base:        16px;
+
+@font-size-h2:       	27px;
+@font-size-h2-head:     43px;
+@font-size-h3:       	18px;
+@font-size-h3-head:     18px;
+@font-size-h4:       	19px;
+@font-size-h5:       	13px;
+@font-size-h6:       	11px;
+
+@font-size-mobile-p:			15px;
+@font-size-mobile-h1:       	28px;
+@font-size-mobile-h1-head:     	28px;
+@font-size-mobile-h2:       	20px;
+@font-size-mobile-h2-head:     	43px;
+@font-size-mobile-h3:       	18px;
+@font-size-mobile-h3-head:     	18px;
+@font-size-mobile-h4:       	19px;
+@font-size-mobile-h5:       	17px;
+@font-size-mobile-h6:       	11px;
+
+//////////////////////////////////////////////////////////
+//
+//	FONT FAMILIES
+//
+//////////////////////////////////////////////////////////
+
+
+@font-webfont-headings:         'HelveticaNeueW01-Thin';
+@font-webfont-text:             'Aeonis LT W01 Thin1328780';
+@font-webfont-bold:             'Aeonis LT W01 Thin Extd';
+
+
+
+
+@font-family-fallback:		"Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-base:       	@font-webfont-text, @font-family-fallback;
+@font-family-headings:    	@font-webfont-headings, @font-family-fallback;
+@font-family-bold:    		@font-webfont-bold, @font-family-fallback;
+
+//////////////////////////////////////////////////////////
+//
+//	FONT LINEHEIGHT
+//
+//////////////////////////////////////////////////////////
+@font-line-h-p:			1.2;
+@font-line-h-base:		1.4;
+@font-line-h-headings:	1;
+
+//////////////////////////////////////////////////////////
+//
+//	FONT WEIGHT
+//
+//////////////////////////////////////////////////////////
+@font-weight-default: normal;
+@font-weight-headings: 200;
+
+
+//////////////////////////////////////////////////////////
+//
+//	FONT COLORS
+//
+//////////////////////////////////////////////////////////
+@font-color-bright:         @color-white;
+@font-color-dark:           @color-dark-grey_text_black;
+@font-color-link-primary:   @color-tree-poppy;
+@font-color-headings:       @color-white;
+
+
+
+//////////////////////////////////////////////////////////
+//
+//	Desktop
+//
+//////////////////////////////////////////////////////////
+.font-default() {
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+	line-height: @font-line-h-base;
+	color: @font-color-dark;
+	letter-spacing: 0.4px;
+}
+
+.font-default-headings() {
+	font-family:    @font-family-headings;
+	font-weight:    @font-weight-headings;
+	line-height:    @font-line-h-headings;
+	color:          @font-color-headings;
+	margin:         0;
+	letter-spacing: -0.7px;
+}
+
+.font-h1() {
+	font-size:          @font-size-h1;
+	margin-bottom:      26px;
+	letter-spacing:     0.8px;
+}
+.font-h2() {
+	font-size: @font-size-h2;
+	letter-spacing: 0.6px;
+	margin-bottom: 45px;
+}
+.font-h3() {
+	font-size: @font-size-h3;
+	letter-spacing: 1.6px;
+	margin-bottom: 13px;
+	color:@font-color-dark;
+}
+.font-h4() {
+	font-size: @font-size-h4;
+	font-weight: 100;
+	letter-spacing: 1.1px;
+	margin-bottom: 16px;
+}
+.font-h5() {
+	font-size: @font-size-h5;
+    letter-spacing: 0.8px;
+    word-spacing: 6px;
+}
+.font-h1-header() {
+
+}
+.font-h2-header() {
+	font-size: @font-size-h2-head;
+	margin-bottom: 23px;
+	letter-spacing: 1.2px;
+}
+.font-h3-header() {
+	font-size: @font-size-h3-head;
+	letter-spacing: 0.8px;
+	color:@font-color-dark;
+}
+.font-link() {
+	color:@color-plum2;
+	cursor: pointer;
+	font-size: 15px;
+	letter-spacing: -0.4px;
+
+	i {
+		margin: 0 15px;
+        position: relative;
+        top: 5px;
+	}
+
+
+
+	&:hover {
+		color:@color-plum1;
+	}
+}
+
+.font-price() {
+	letter-spacing: 0.6px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.font-bold() {
+	font-family: @font-family-bold;
+	font-weight: bold;
+	letter-spacing: -0.7px;
+}
+
+//////////////////////////////////////////////////////////
+//
+//	Bind
+//
+//////////////////////////////////////////////////////////
+
+.main-claudio-pizarro {
+    .font-default();
+
+    table {
+        .font-default();
+    }
+
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+        .font-default-headings();
+    }
+
+    h1, .h1 {		.font-h1();	}
+    h2, .h2 {		.font-h2();	}
+    h3, .h3 {		.font-h3();	}
+    h4, .h4 {		.font-h4();	}
+    h5, .h5 {		.font-h5();	}
+    p {			.font-default();	}
+
+    .page-header {
+        h1, .h1 {	.font-h1-header();	}
+        h2, .h2 {	.font-h2-header();	}
+        h3, .h3 {	.font-h3-header();	}
+    }
+
+    b, strong, .bold {
+        .font-bold();
+    }
+
+    .link {
+        .font-link();
+    }
+
+    .text-price {
+        .font-price();
+    }
+
+    // Contextual emphasis
+    .text-muted          { color: @text-muted; }
+    .text-primary        { color: @brand-primary; }
+    .text-warning        { color: @state-warning-text; }
+    .text-danger         { color: @state-danger-text; }
+    .text-success        { color: @state-success-text; }
+    .text-info           { color: @state-info-text; }
+
+    // Alignment
+    .text-left           { text-align: left; }
+    .text-right          { text-align: right; }
+    .text-center         { text-align: center; }
+
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////
+//
+//	Mobile
+//
+//////////////////////////////////////////////////////////
+@media screen and (max-width: @breakpoint-mobile) {
+
+    .main-claudio-pizarro {
+
+        p {
+            letter-spacing: 1px;
+            font-size: 15px;
+
+            b, strong {
+                letter-spacing: 0.1px;
+            }
+        }
+
+        h1 {
+            font-size: @font-size-mobile-h1;
+            margin-bottom: 14px;
+            letter-spacing: 0.6px;
+        }
+        h2 {
+            font-size: @font-size-mobile-h2;
+            line-height: 26px;
+            margin-bottom: 25px;
+            letter-spacing: 0.8px;
+        }
+
+        h3 {
+            font-size: @font-size-mobile-h3;
+            letter-spacing: 1px;
+        }
+        h4 {
+            font-size: @font-size-mobile-h4;
+            letter-spacing: 1.4px;
+        }
+        h5 {
+            font-size: @font-size-mobile-h5;
+            letter-spacing: -0.7px;
+        }
+
+        .page-header {
+            h1 {
+                font-size: @font-size-mobile-h1-head;
+            }
+            h2 {
+                font-size: @font-size-mobile-h2-head;
+                margin-bottom: 13px;
+                line-height: 1;
+                letter-spacing: -1px;
+            }
+            h3 {
+                font-size: @font-size-mobile-h3-head;
+                letter-spacing: 1.2px;
+            }
+        }
+
+        .link {
+            letter-spacing: 0.2px;
+
+            i {
+                margin: 0 12px;
+            }
+        }
+
+        .control-label {
+            .font-bold();
+        }
+
+
+
+
+        .text-price {
+            letter-spacing: 0.6px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        table {
+
+                font-family: @font-family-base;
+                font-size: @font-size-mobile-p;
+                line-height: @font-line-h-base;
+                color: @font-color-dark;
+                letter-spacing: 0.4px;
+        }
+
+    }
+
+}

@@ -14,7 +14,8 @@ class SearchResults extends Component {
   constructor(props) {
     super(props);
     var dataSource = new ListView.DataSource(
-      {rowHasChanged: (r1, r2) => r1.guid !== r2.guid});
+      {rowHasChanged: (r1, r2) => r1.guid !== r2.guid}
+    );
     this.state = {
       dataSource: dataSource.cloneWithRows(this.props.listings)
     };
@@ -26,19 +27,19 @@ class SearchResults extends Component {
       component: PropertyView,
       passProps: {property: property}
     });
-  }  renderRow(rowData, sectionID, rowID) {
+  }
+  renderRow(rowData, sectionID, rowID) {
     var price = rowData.price_formatted.split(' ')[0];
-
     return (
-      <TouchableHighlight onPress={() => this.rowPressed(rowData.guid)}
-          underlayColor='#dddddd'>
+      <TouchableHighlight
+        onPress={() => this.rowPressed(rowData.guid)}
+        underlayColor='#dddddd'>
         <View>
           <View style={styles.rowContainer}>
             <Image style={styles.thumb} source={{ uri: rowData.img_url }} />
             <View  style={styles.textContainer}>
               <Text style={styles.price}>£{price}</Text>
-              <Text style={styles.title}
-                    numberOfLines={1}>{rowData.title}</Text>
+              <Text style={styles.title} numberOfLines={1}>{rowData.title}</Text>
             </View>
           </View>
           <View style={styles.separator}/>

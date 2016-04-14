@@ -1,0 +1,47 @@
+.component-summary {
+    .werder-bremen();
+    .bayern-munich();
+
+    .summary__image {
+        width: 100%;
+    }
+    .summary-shield {
+        margin-top: 40px;
+    }
+
+    .summary__numbers {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 30px;
+        padding-left: 30px;
+
+
+        .summary__numbers__item {
+            color: @color-white;
+        }
+        .summary__numbers__item--label {
+            font-weight: 200;
+            color: @color-orange-10;
+        }
+    }
+
+}
+
+
+.werder-bremen() {
+    &.werder-bremen {
+        background-color: @color-werder-bremen-main;
+        .summary__title {
+            background-color: @color-werder-bremen-secondary;
+        }
+    }
+}
+
+.bayern-munich() {
+    &.bayern-munich {
+        background-color: @color-bayern-munich-main;
+        .summary__title {
+            background-color: @color-bayern-munich-secondary;
+        }
+    }
+}
